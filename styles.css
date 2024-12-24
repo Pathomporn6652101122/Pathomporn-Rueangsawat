@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  .lol {
+    width: 20px; 
+    height: auto;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile {
+    text-align: center;
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-info p a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .profile-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .navbar {
+    background: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-list li {
+    margin: 0 10px;
+  }
+  
+  .nav-list a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav-list a:hover {
+    text-decoration: underline;
+  }
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-toggle .bar {
+    background: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu-toggle {
+      display: flex;
+    }
+  
+    .nav-list {
+      display: none;
+      flex-direction: column;
+    }
+  
+    .nav-list.active {
+      display: flex;
+      background: #444;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+    }
+  
+    .nav-list li {
+      text-align: center;
+      margin: 10px 0;
+    }
+  }
